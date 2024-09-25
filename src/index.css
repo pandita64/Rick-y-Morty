@@ -16,6 +16,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -34,6 +35,10 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   margin: 0 0 20px 0; 
+}
+
+h3 {
+  color: #ffffff; /* Asegúrate de que el color del título se mantenga */
 }
 
 p {
@@ -66,6 +71,7 @@ button {
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -88,5 +94,30 @@ input {
   margin-bottom: 10px;
   padding: 5px;
 }
+
+/* Estilos para las tarjetas de personajes */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra las tarjetas */
+  margin: 20px;
+}
+
+.card {
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  width: 200px; /* Puedes ajustar el ancho de las tarjetas */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  border-radius: 8px;
+}
+
 
 
