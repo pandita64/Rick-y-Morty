@@ -5,7 +5,7 @@ import { RickAndMortyAPIResponse, Character } from "../interfaces";
 const loadCharacters = async (page: number): Promise<Character[]> => {
     try {
         const { data } = await axios.get<RickAndMortyAPIResponse>(`https://rickandmortyapi.com/api/character?page=${page}`);
-        return data.results.slice(0, 10); // Limitar a 8 personajes
+        return data.results.slice(0, 10);
     } catch (error) {
         console.error(error);
         return [];
