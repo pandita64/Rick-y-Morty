@@ -31,15 +31,16 @@ body {
   background-color: #242424;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  margin: 0 0 20px 0; 
+/* Estilo del título h3 */
+h3 {
+  font-family: 'Georgia', serif; /* Cambia la fuente */
+  font-size: 5.5rem; /* Tamaño más grande */
+  color: #e6ab0b; /* Color dorado */
+  text-align: center; /* Centrado */
+  margin-top: 20px; /* Espacio en la parte superior */
+  margin-bottom: 10px; /* Espacio en la parte inferior */
 }
 
-h3 {
-  color: #ffffff; /* Asegúrate de que el color del título se mantenga */
-}
 
 p {
   font-size: 1.5em; 
@@ -96,28 +97,113 @@ input {
 }
 
 /* Estilos para las tarjetas de personajes */
+/* Estilos del contenedor */
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centra las tarjetas */
-  margin: 20px;
+  justify-content: center;
+  gap: 20px; /* Espacio entre tarjetas */
+  max-width: 1200px; /* Ajusta el ancho máximo del contenedor */
+  margin: 20px auto; /* Centra el contenedor */
+  padding: 20px; /* Añade relleno al contenedor */
 }
 
+/* Estilos de las tarjetas */
 .card {
-  background: #f0f0f0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  margin: 10px;
-  width: 200px; /* Puedes ajustar el ancho de las tarjetas */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  background-color: #2e2e3b; /* Color de fondo oscuro */
+  color: white; /* Texto en blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  width: 200px; /* Ajusta el tamaño de las tarjetas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para mayor profundidad */
+  overflow: hidden; /* Asegura que el contenido no sobresalga */
+  transition: transform 0.2s ease;
 }
 
+.card:hover {
+  transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+}
+
+/* Estilos para las imágenes */
 .image {
   width: 100%;
-  border-radius: 8px;
+  height: 200px; /* Asegura una altura consistente para las imágenes */
+  object-fit: cover; /* Ajusta la imagen sin distorsionar */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
+
+/* Estilo de los títulos dentro de las tarjetas */
+.card h4 {
+  font-size: 1.2rem; /* Tamaño del título */
+  font-weight: bold;
+  margin: 15px 10px 5px 10px; /* Espaciado */
+  color: #fff; /* Texto blanco */
+}
+
+/* Estilos de los detalles en las tarjetas */
+.card p {
+  font-size: 0.9rem; /* Ajusta el tamaño de la descripción */
+  margin: 5px 10px; /* Espaciado */
+  color: #ccc; /* Color de texto gris claro */
+}
+
+/* Estilo para el estado (Alive, Dead, etc.) */
+.status {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.status span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status.alive span {
+  background-color: #28a745; /* Verde para Alive */
+}
+
+.status.dead span {
+  background-color: #dc3545; /* Rojo para Dead */
+}
+
+.status.unknown span {
+  background-color: #6c757d; /* Gris para Unknown */
+}
+
+/* Estilos de paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.pagination button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #555;
+}
+
+.pagination button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+
+
+
 
 
 
