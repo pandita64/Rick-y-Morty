@@ -30,8 +30,8 @@ const UserPage = () => {
 
     return (
         <>
-        <div className="main-container"></div>
-        <h3>The Rick and Morty</h3>
+            <div className="main-container"></div>
+            <h3>The Rick and Morty</h3>
             <div className="card-container">
                 {characters.map(character => (
                     <div key={character.id} className="card">
@@ -46,12 +46,25 @@ const UserPage = () => {
                 <button onClick={handlePrevPage} disabled={currentPage === 1}>Anterior</button>
                 <button onClick={handleNextPage}>Siguiente</button>
             </div>
+            
+            
+            <footer style={{ 
+            marginTop: "20px", 
+            textAlign: "center", 
+            padding: "10px", 
+            backgroundColor: "#000",  
+            color: "#fff",  
+            fontFamily: "'Arial', sans-serif",  
+            fontSize: "14px",  
+            fontWeight: "bold"  
+        }}>
+    <p>&copy; 2024 @yolimarozo905</p>
+</footer>
+
         </>
     );
 };
 
 export default UserPage;
-
-
 
 
